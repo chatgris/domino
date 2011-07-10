@@ -25,29 +25,32 @@ To append a html list of paginated links in the dom :
 
 Coffeescript :
 
-    new Domino {
-      current_page: 23,
-      per_page: 10,
-      total_entries: 233,
-      path: 'posts/page/',
-      inner: 3,
-      outer: 3
-    }, (paginated)->
-      $('#paginate').append paginated
+``` coffescript
+new Domino {
+  current_page: 23,
+  per_page: 10,
+  total_entries: 233,
+  path: 'posts/page/',
+  inner: 3,
+  outer: 3
+}, (paginated)->
+  $('#paginate').append paginated
+```
 
 Javascript :
 
-    new Domino({
-      current_page: 23,
-      per_page: 10,
-      total_entries: 233,
-      path: 'posts/page',
-      inner: 3,
-      outer: 3
-    }, function(paginated) {
-      $('#paginate').append(paginated);
-    });
-
+``` javascript
+new Domino({
+  current_page: 23,
+  per_page: 10,
+  total_entries: 233,
+  path: 'posts/page',
+  inner: 3,
+  outer: 3
+}, function(paginated) {
+  $('#paginate').append(paginated);
+});
+```
 
 Note on Patches/Pull Requests
 -----------------------------
