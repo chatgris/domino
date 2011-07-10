@@ -25,7 +25,7 @@ To append a html list of paginated links in the dom :
 
 Coffeescript :
 
-``` coffescript
+``` coffeescript
 new Domino {
   current_page: 23,
   per_page: 10,
